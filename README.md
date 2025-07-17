@@ -11,7 +11,7 @@ This is a secure authentication API built with **Node.js**, **Express**, and **M
 - JWT Access Token for protected routes
 - HTTP-only **Refresh Token** stored in cookies and user can get it
 - **Blacklist** refresh tokens on logout
-- **Role-based access control**admins only can access get admin using the access_token  and as they can promote users to admins
+- **Role-based access control** admins only can access get admin using the access_token  and as they can promote users to admins
 - Protected `/profile` route using the tokens
 - **CORS** enabled for cross-origin support
 
