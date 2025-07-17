@@ -1,7 +1,7 @@
 
 # 🔐 Secure Authentication API with JWT, Role-Based Access & Refresh Token Blacklisting
 
-This is a secure authentication API built with **Node.js**, **Express**, and **MongoDB**. It uses **JWT** for access and refresh tokens, supports **HTTP-only cookie storage**, **refresh token blacklisting**, get new access tokens using "refresh", and allows **admins to promote users to admin**,and allows admins to go to specific route using their access token .
+This is a secure authentication API built with **Node.js**, **Express**, and **MongoDB**. It uses **JWT** for access and refresh tokens, supports **HTTP-only cookie storage**, **refresh token blacklisting**, get new access tokens using "refresh", and allows **admins to promote users to admin** allows admins to go to specific route using their access token,**Rate limiting** .
 
 ---
 
@@ -11,8 +11,9 @@ This is a secure authentication API built with **Node.js**, **Express**, and **M
 - JWT Access Token for protected routes
 - HTTP-only **Refresh Token** stored in cookies and user can get it
 - **Blacklist** refresh tokens on logout
-- **Role-based access control** admins only can access get admin using the access_token  and as they can promote users to admins
+- **Role-based access control** only admins can get access to admin route using the access_token as they can promote users to admins
 - Protected `/profile` route using the tokens
+- **Rate limiting** the max number of logins or registerations is 100 per 15 minutes
 - **CORS** enabled for cross-origin support
 
 ---
