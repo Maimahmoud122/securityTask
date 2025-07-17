@@ -186,7 +186,7 @@ Call `POST /api/auth/logout`. It will blacklist the `refreshToken` and clear it 
 
 ---
 
-## to connectto mongodb 
+## to connect to mongodb 
 - write in the terminal mongod and then mongosh
 
 
