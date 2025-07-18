@@ -10,7 +10,7 @@ This is a secure authentication API built with **Node.js**, **Express**, and **M
 - Register/login with hashed passwords and choose the role whether admin or user and by default it is user
 - JWT Access Token for protected routes
 - HTTP-only **Refresh Token** stored in cookies and user can get it
-- **Blacklist** refresh tokens on logout
+- **Blacklist** refresh tokens by the session id saved in the mingo db on logout
 - **Role-based access control** only admins can get access to admin route using the access_token as they can promote users to admins
 - Protected `/profile` route using the tokens
 - **Rate limiting** the max number of logins or registerations is 100 per 15 minutes
